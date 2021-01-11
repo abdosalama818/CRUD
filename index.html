@@ -1,0 +1,75 @@
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/crud.css">
+
+
+
+</head>
+
+<body>
+
+    
+  <div class="container py-5 crud">
+    <div class="group-control">
+        <label for="productNameInput">productName</label>
+        <input type="text" id="productNameInput" class="form-control">
+    </div>
+    <div class="group-control">
+        <label for="productPriceInput">productPriceInput</label>
+        <input type="number" id="productPriceInput" class="form-control">
+    </div>
+    <div class="group-control">
+        <label for="productCategoryInput">productCategory</label>
+        <input type="text" id="productCategoryInput" class="form-control">
+    </div>
+    <div class="group-control">
+        <label for="productDescInput">productDesc</label>
+        <input type="text" id="productDescInput" class="form-control">
+    </div>
+
+    <button class="btn btn-dark btn-outline-info my-2 p-2 addd w-100  form-control " id="demo" onclick="addProduct()" > Add product </button>
+  </div>
+
+<div class="container py-5 m-auto">
+
+    <input type="search" placeholder="searsh" onkeyup="search(this.value)" class="form-control w-75 m-auto p-2 " >
+
+    <table class="table my-3 text-secondary" >
+
+        <thead>
+           <th>index</th>
+           <th>ProductName</th>
+           <th>ProductPrice</th>
+           <th>productCategory</th>
+           <th>productDescription</th>
+           <th>UPDATE</th>
+           <th>DELETE</th>
+        </thead>
+        <tbody id="tableBody">
+          
+        </tbody>
+      </table>
+</div>
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+ 
+    <script src="js/index2.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
