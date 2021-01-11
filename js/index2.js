@@ -96,7 +96,7 @@ function search(term){
             <td>${products[i].name}</td>
             <td>${products[i].price}</td>
             <td>${products[i].category}</td>
-            <td>${products[i].description}</td>
+            <td>${products[i].desc}</td>
             
             <td><button class="btn btn-info ">UPDATE</button></td>
             <td><button class="btn btn-danger "onclick="deleteProduct(${i})">delete</button></td>
@@ -112,7 +112,7 @@ function update(i){
     productName.value=products[i].name
     productPrice.value=products[i].price
     productCategory.value=products[i].category
-    productDesc.value=products[i].description
+    productDesc.value=products[i].desc
 
     document.getElementById("demo").innerHTML='Update'
     
